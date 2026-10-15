@@ -1,0 +1,5 @@
+Naive: 6.070s
+SleepSpot-L1: 1.358s
+SleepSpot-L2: 1.492s
+L1 speedup: 4.5x
+L2 speedup: 4.1x

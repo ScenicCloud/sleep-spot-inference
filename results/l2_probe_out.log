@@ -1,0 +1,33 @@
+=== 唤醒状态基线 ===
+RAM used: 2188 MB
+21012 MiB
+=== sleep L1 ===
+http=200 time=1.465125s
+RAM used: 2204 MB
+980 MiB
+=== wake L1 ===
+http=200 time=0.143422s
+RAM used: 2204 MB
+=== sleep L2 ===
+http=200 time=0.403928s
+RAM used: 2221 MB
+980 MiB
+=== wake L2 (计时) ===
+http=200 time=0.011733s
+wake wall: .017721794s
+RAM used: 2221 MB
+20488 MiB
+=== L2 wake 后推理 ===
+http=200 time=0.053258s
+=== server 日志 sleep 相关 ===
+INFO 10-14 22:07:38 [launcher.py:36] Route: /wake_up, Methods: POST
+INFO 10-14 22:07:42 [gpu_worker.py:95] Sleep mode freed 19.56 GiB memory, 0.96 GiB memory is still in use.
+INFO 10-14 22:07:42 [executor_base.py:210] It took 1.461994 seconds to fall asleep.
+INFO 10-14 22:07:45 [api_server.py:725] wake up the engine with tags: None
+INFO 10-14 22:07:45 [executor_base.py:226] It took 0.140339 seconds to wake up tags {'weights', 'kv_cache'}.
+INFO:     127.0.0.1:33848 - "POST /wake_up HTTP/1.1" 200 OK
+INFO 10-14 22:07:46 [gpu_worker.py:95] Sleep mode freed 19.05 GiB memory, 0.96 GiB memory is still in use.
+INFO 10-14 22:07:46 [executor_base.py:210] It took 0.401332 seconds to fall asleep.
+INFO 10-14 22:07:48 [api_server.py:725] wake up the engine with tags: None
+INFO 10-14 22:07:48 [executor_base.py:226] It took 0.009465 seconds to wake up tags {'weights', 'kv_cache'}.
+=== 探针完成 ===

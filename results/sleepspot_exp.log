@@ -1,0 +1,40 @@
+[21:59:15] ============================================================
+[21:59:15] SleepSpot 正式实验开始 (真实 sleep mode API)
+[21:59:15] ============================================================
+[21:59:15] Phase A: 准备 sleep mode server
+[21:59:18]   GPU 清理: OK (现 2 MiB)
+[21:59:18]   server pid=60238 sleep_mode=True
+[22:00:08]   ready: 49.39s
+[22:00:08]   预热: 200
+[22:00:10] Sleep L1 trial 1
+[22:00:14]   L1: sleep_api=1.48s wake_api=0.15s mem=0.02s total_to_infer=0.06s gpu_after_sleep=980MiB infer=200
+[22:00:16] Sleep L2 trial 1
+[22:00:18]   L2: sleep_api=0.41s wake_api=0.02s mem=0.02s total_to_infer=0.05s gpu_after_sleep=980MiB infer=200
+[22:00:20] Sleep L1 trial 2
+[22:00:23]   L1: sleep_api=0.47s wake_api=0.15s mem=0.04s total_to_infer=0.05s gpu_after_sleep=980MiB infer=200
+[22:00:25] Sleep L2 trial 2
+[22:00:28]   L2: sleep_api=0.41s wake_api=0.02s mem=0.03s total_to_infer=0.06s gpu_after_sleep=980MiB infer=200
+[22:00:30] Sleep L1 trial 3
+[22:00:33]   L1: sleep_api=1.00s wake_api=0.15s mem=0.04s total_to_infer=0.06s gpu_after_sleep=980MiB infer=200
+[22:00:35] Sleep L2 trial 3
+[22:00:38]   L2: sleep_api=0.40s wake_api=0.02s mem=0.04s total_to_infer=0.06s gpu_after_sleep=980MiB infer=200
+[22:00:40] 冷启动 trial 1
+[22:00:43]   GPU 清理: OK (现 2 MiB)
+[22:00:43]   冷启动第 1 次: 启动...
+[22:00:43]   server pid=60658 sleep_mode=False
+[22:01:35]   冷启动第 1 次: ready=51.40s infer_code=200 total_to_infer=51.74s
+[22:01:35] 冷启动 trial 2
+[22:01:38]   GPU 清理: OK (现 2 MiB)
+[22:01:38]   冷启动第 2 次: 启动...
+[22:01:38]   server pid=60969 sleep_mode=False
+[22:02:27]   冷启动第 2 次: ready=48.37s infer_code=200 total_to_infer=48.66s
+[22:02:27] 冷启动 trial 3
+[22:02:30]   GPU 清理: OK (现 2 MiB)
+[22:02:30]   冷启动第 3 次: 启动...
+[22:02:30]   server pid=61270 sleep_mode=False
+[22:03:20]   冷启动第 3 次: ready=49.42s infer_code=200 total_to_infer=49.72s
+[22:03:20] ============================================================
+[22:03:20] 汇总: {"cold_ready_avg": 49.73, "cold_total_to_infer_avg": 50.04, "l1_wake_total_avg": 0.06, "l1_mem_restore_avg": 0.03, "l2_wake_total_avg": 0.06, "l2_mem_restore_avg": 0.03, "l1_speedup": 834.0, "l2_speedup": 834.0}
+[22:03:20] ============================================================
+[22:03:20] 结果已保存: /root/sleepspot_results.json
+[22:03:20] 实验结束
