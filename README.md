@@ -17,7 +17,6 @@ sleep-spot-inference/
 ├── src/                # 实验脚本（可复现）
 │   ├── sleep_mode_experiment.py      # 1.5B 主实验
 │   ├── sleep_mode_experiment_7b.py   # 7B 主实验
-│   ├── simulate_spot_recovery.py     # Mac 原型模拟
 │   └── ...
 ├── results/            # 原始实验数据与日志
 └── cloud-setup/        # 云 GPU 环境搭建指南

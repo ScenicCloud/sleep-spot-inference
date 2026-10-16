@@ -125,8 +125,7 @@ Spot 实例被回收（进程终止）
 
 ### 4.4 实验平台
 
-- Phase 1（本地 Mac）：模拟实验，验证逻辑正确性
-- Phase 2（云 GPU）：真实 vLLM + CUDA 上的 sleep mode 实验
+- Phase 1（云 GPU）：真实 vLLM + CUDA 上的 sleep mode 实验
   - 推荐云平台：AutoDL、矩池云、阿里云 ECS（有学生折扣）
   - 推荐 GPU：RTX 4090 24GB 或 L4 24GB（单卡足够）
 
@@ -185,7 +184,7 @@ References
 
 | 周 | 任务 |
 |----|------|
-| W1 | Mac 上原型 + 模拟实验 |
+| W1 | 方案调研与实验设计 |
 | W2 | 云 GPU 环境 + vLLM sleep mode 实验 |
 | W3 | 完整对比实验 + 数据整理 |
 | W4 | 写论文 + 润色 |
